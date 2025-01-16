@@ -4,7 +4,7 @@
 # Script to download common tools used to development in a endeavour os environment
 #
 
-sudo pacman -S git nitrogen asdf-vm zsh
+sudo pacman -S git nitrogen asdf-vm zsh alacritty docker vscode-oss
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
