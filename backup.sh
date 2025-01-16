@@ -5,18 +5,19 @@
 #
 
 if [ ! -d ./.config/i3 ]; then
-    mkdir -p ./.config/i3
+  mkdir -p ./.config/i3
 fi
 if [ ! -d ./.config/nvim ]; then
-   mkdir -p ./.config/nvim
+  mkdir -p ./.config/nvim
 fi
 if [ ! -d ./.fonts ]; then
-   mkdir -p ./.fonts
+  mkdir -p ./.fonts
 fi
 
 cp $HOME/.config/i3/{config,i3blocks.conf,keybindings} ./.config/i3/
 cp $HOME/.alacritty.toml ./
 cp $HOME/.fonts/NotoSansMNerdFont-Regular.ttf ./.fonts/
 cp -r $HOME/.config/nvim/* ./.config/nvim/
-cp $HOME/.zshrc ./
 cp $HOME/.tool-versions ./
+cp $HOME/.zshrc ./
+cp $HOME/.p10k.zsh ./
